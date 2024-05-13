@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="signin.css.css">
+</head>
+</html>
+<body>
+	<header>
+		<nav>
+			<a href="index.html">Home</a>
+			
+            <a href="product.html">Seller</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="index1.html">Contact</a>
+            <a href="cart.html">Cart</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="signin.html">Sign In</a>	
+           
+		</nav>
+    </header>
+	<div class="container">
+	  <h1>Login</h1>
+	  <form id="loginForm" method="POST" action="">
+		<input type="text" name="username" placeholder="Username" required><br>
+		<input type="password" name="password" placeholder="Password" required><br>
+		<input type="submit" value="Login">
+	  </form>
+	  <p>Don't have an account? <a  href="signup.html">Sign up</a></p>
+	</div>
+	<script>
+	  document.getElementById("loginForm").addEventListener("submit", function(event) {
+		event.preventDefault(); // Prevent form submission
+		window.location.href = "index.html"; // Redirect to home page
+	  });
+  
+	  document.getElementById("signupLink").addEventListener("click", function(event) {
+		event.preventDefault(); // Prevent link click default behavior
+		window.location.href = "si"; // Redirect to signup page
+	  });
+	</script>
+  </body>
+  </html>
+  
